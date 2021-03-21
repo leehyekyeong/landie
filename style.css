@@ -220,11 +220,12 @@ h2 {
 
 .item-image {
     display: none;
+    height: 200px;
 }
 
 .item-image img {
     display: block;
-    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -339,7 +340,7 @@ h2 {
 }
 
 /* ==================================================== */
-/* col-sm : mobile landscape PC responsive */
+/* col-sm : mobile landscape responsive */
 /* ==================================================== */
 
 @media screen and (min-width: 576px) {
@@ -372,106 +373,18 @@ h2 {
         font-size: 14px;
         line-height: 1.5;
     }
+
+    /* item */
+    .items .col-md-6 {
+        margin-bottom: 48px;
+    }
+
+    .item-image {
+        display: block;
+    }
 }
 
 /* LG : tablet PC responsive */
 @media screen and (min-width: 992px) {
-
-    p {
-        font-size: 16px;
-        line-height: 1.62;
-    }
-    
-    h1 {
-        font-size: 50px;
-        line-height: 1.32;
-    }
-    
-    h2 {
-        font-size: 36px;
-        line-height: 1.33;
-    }
-    
-    .button-small {
-        width: 160px;
-        cursor: pointer;
-        transition: opacity 300ms ease-in-out;
-    }
-    
-    .button-small:hover {
-        opacity: 0.5;
-    }
-    
-    .button-large {
-        width: 190px;
-        height: 40px;
-        padding: 7px 0 4px;
-        background-color: #111B47;
-        border-radius: 2px;
-    
-        color: #FFFFFF;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        cursor: pointer;
-        transition: opacity 300ms ease-in-out;
-    }
-    
-    .button-small:hover,
-    .button-large:hover {
-        opacity: 0.5;
-    }
-
-    /* LANDING SECTION */
-    
-    .landing {
-        height: 100vh;
-        background-image: url('./assets/main-image.png');
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: contain;
-    }
-    
-    .landing .col-md-8 {
-        padding-top: 240px;
-    }
-    
-    .landing-title {
-        margin-bottom: 20px;
-    }
-    
-    .landing-desc {
-        color: #505F98;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.66;
-        margin-bottom: 72px;
-    }
-    
-    .landing-buttons {
-        display: flex;
-    }
-    
-    .landing .button-large:first-child {
-        margin-right: 30px;
-    }
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    /* CONTACT */
-    
-
 
 }
