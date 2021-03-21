@@ -1,51 +1,16 @@
 /* import webfont url */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* reset CSS styles */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
 
 body {
     font-family: 'Roboto', sans-serif;;
-}
-
-/* Reset CSS */
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* button, input, textarea에는 body에서 세팅한 font-family가 적용되지 않음 */
 button,
 input,
 textarea {
-    border: none;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
-}
-
-button:focus, button:active,
-input:focus, input:active,
-textarea:focus, textarea:active {
-    outline: none;
-    box-shadow: none;
-}
-
-ul,
-ol,
-li {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-p {
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 /* Custom Grid System - max container width */
@@ -190,6 +155,7 @@ h2 {
     background-image: url('./assets/main-image.png');
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: contain;
 }
 
 .landing-title {
