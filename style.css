@@ -242,6 +242,32 @@ h2 {
     width: 100%;
 }
 
+/* price */
+.price {
+    padding: 240px 0 150px;
+    background-image: url('./assets/price-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
+
+.price-item {
+    margin-bottom: 36px;
+}
+
+.price-title {
+    margin-bottom: 16px;
+}
+
+.product-price h1 {
+    margin-bottom: 2px;
+}
+
+.product-price p {
+    color: #37447E;
+}
+
 /* ==================================================== */
 /* col-sm : mobile landscape PC responsive */
 /* ==================================================== */
@@ -369,32 +395,7 @@ h2 {
     
 
     
-    /* PRICE */
-    .price {
-        padding: 240px 0 150px;
-        background-image: url('./assets/price-bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
     
-        text-align: center;
-    }
-    
-    .price-desc h2 {
-        margin-bottom: 16px;
-    }
-    
-    .price-desc {
-        margin-bottom: 36px;
-    }
-    
-    .product-price h1 {
-        margin-bottom: 2px;
-    }
-    
-    .product-price p {
-        color: #37447E;
-    }
     
     /* FOOTER */
     .footer {
