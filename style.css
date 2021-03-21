@@ -8,6 +8,10 @@ textarea {
     font-family: 'DM Sans', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: 'Roboto', sans-serif;;
 }
@@ -123,9 +127,7 @@ h2 {
 /* landing */
 .landing {
     background-image: none;
-}
-
-.landing .col-12 {
+    margin-bottom: 40px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -155,8 +157,9 @@ h2 {
 
 /* service */
 .service {
-    height: 800px;
+    height: 680px;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .service-table {
@@ -204,8 +207,8 @@ h2 {
 .service-image {
     width: 100%;
     height: 400px;
-    position: relative;
-    top: -80px;
+    position: absolute;
+    bottom: 0;
     z-index: -1;
     background-image: url('./assets/service-image.png');
     background-repeat: no-repeat;
@@ -254,11 +257,18 @@ h2 {
 }
 
 .price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 36px;
 }
 
 .price-title {
     margin-bottom: 16px;
+}
+
+.price-desc {
+    max-width: 720px;
 }
 
 .product-price h1 {
@@ -345,6 +355,30 @@ h2 {
 
 @media screen and (min-width: 576px) {
 
+    h1 {
+        font-size: 36px;
+        line-height: 1.32;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    /* service */
+    .service {
+        height: 640px;
+        margin-bottom: 120px;
+    }
+
+    .service-content {
+        max-width: 800px;
+    }
+
+    .items {
+        margin-bottom: 80px;
+    }
+
 }
 
 
@@ -354,12 +388,32 @@ h2 {
 
 @media screen and (min-width: 768px) {
 
+    h1 {
+        font-size: 40px;
+        line-height: 1.32;
+    }
+    
+    h2 {
+        font-size: 28px;
+        line-height: 1.33;
+    }
+    
     /* nav */
     .nav li {
         margin-right: 40px;
     }
 
     /* landing */
+    .landing {
+        background-image: url('./assets/main-image.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -62px;
+        z-index: -1;
+    }
+
     .landing .col-md-8 {
         padding-top: 180px;
     }
@@ -374,6 +428,21 @@ h2 {
         line-height: 1.5;
     }
 
+    .landing-buttons {
+        justify-content: flex-start;
+    }
+
+    .service-detail-item {
+        max-width: 360px;
+        padding-right: 18px;
+    }
+
+    .service-image {
+        background-position: right center;
+        bottom: 0;
+        right: 40px;
+    }
+
     /* item */
     .items .col-md-6 {
         margin-bottom: 48px;
@@ -386,5 +455,38 @@ h2 {
 
 /* LG : tablet PC responsive */
 @media screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 56px;
+        line-height: 1.32;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 1.33;
+    }
+
+    /* landing */
+    .landing-desc {
+        font-size: 18px;
+    }
+
+    /* service */
+    .service {
+        height: 520px;
+    }
+
+    .service-content {
+        font-size: 16px;
+        max-width: 1000px;
+    }
+
+    .service-detail-head {
+        font-size: 16px;
+    }
+
+    .service-detail-body {
+        font-size: 14px;
+    }
 
 }
