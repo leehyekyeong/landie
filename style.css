@@ -69,6 +69,7 @@ li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+    cursor: pointer;
 }
 
 .button-large {
@@ -82,6 +83,7 @@ li {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
 }
 
 .inverted {
@@ -122,6 +124,7 @@ li {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .nav .col-12 {
@@ -145,10 +148,13 @@ li {
 
 /* landing */
 .landing {
-    background-image: none;
     margin-bottom: 40px;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.landing-image {
+    background-image: none;
 }
 
 .landing-title {
@@ -392,6 +398,11 @@ li {
         line-height: 1.33;
     }
 
+    /* landing */
+    .landing-buttons {
+        justify-content: flex-start;
+    }
+
     /* service */
     .service {
         height: 640px;
@@ -435,14 +446,14 @@ li {
     }
 
     /* landing */
-    .landing {
+    .landing-image {
         background-image: url('./assets/main-image.png');
         background-position: right center;
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         top: -62px;
-        z-index: -1;
+        /* z-index: -1; */
     }
 
     .landing .col-md-8 {
@@ -457,10 +468,6 @@ li {
         max-width: 480px;
         font-size: 14px;
         line-height: 1.5;
-    }
-
-    .landing-buttons {
-        justify-content: flex-start;
     }
 
     .service-detail-item {
