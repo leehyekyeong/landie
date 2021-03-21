@@ -196,7 +196,7 @@ li {
 
 .service-detail-item {
     max-width: 240px;
-    padding-right: 12px;
+    margin-right: 24px;
 }
 
 .service-detail-image {
@@ -218,7 +218,7 @@ li {
 
 .service-detail-body {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.33;
     color: #5D6970;
 }
@@ -464,8 +464,12 @@ li {
     }
 
     .service-detail-item {
-        max-width: 360px;
-        padding-right: 18px;
+        max-width: 320px;
+        margin-right: 32px;
+    }
+
+    .service-detail-body {
+        line-height: 1.45;
     }
 
     .service-image {
