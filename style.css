@@ -135,7 +135,7 @@ h2 {
 }
 
 .landing-desc {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 60px;
 }
@@ -168,6 +168,7 @@ h2 {
 }
 
 .service-content {
+    font-size: 14px;
     margin-bottom: 64px;
 }
 
@@ -213,9 +214,8 @@ h2 {
 }
 
 /* items */
-.items .row {
-    justify-content: space-between;
-    padding: 120px 0;
+.items {
+    margin-bottom: 160px;
 }
 
 .item-image {
@@ -233,14 +233,14 @@ h2 {
 }
 
 .item-body {
+    font-size: 14px;
     display: block;
-}
-
-/* button top margin settings */
-.items .row:last-child .item-body {
     margin-bottom: 40px;
 }
 
+.items .button-large {
+    width: 100%;
+}
 
 /* ==================================================== */
 /* col-sm : mobile landscape PC responsive */
