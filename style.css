@@ -248,7 +248,7 @@ li {
     position: absolute;
     bottom: 0;
     width: calc(100% - 30px);
-    height: 400px;
+    height: 360px;
     z-index: -1;
     background-image: url('./assets/service-image.png');
     background-repeat: no-repeat;
@@ -431,10 +431,6 @@ li {
         max-width: 800px;
     }
 
-    .service-image {
-        bottom: 0;
-    }
-
     .items {
         margin-bottom: 80px;
     }
@@ -503,9 +499,9 @@ li {
     }
 
     .service-image {
+        height: 480px;
         background-position: right center;
         bottom: 0;
-        right: 40px;
     }
 
     /* item */
@@ -541,9 +537,6 @@ li {
     }
 
     /* service */
-    .service {
-        height: 520px;
-    }
 
     .service-content {
         font-size: 16px;
