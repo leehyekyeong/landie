@@ -109,6 +109,7 @@ li {
 /* logo */
 .logo {
     width: 80px;
+    cursor: pointer;
 }
 
 .logo img {
