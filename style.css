@@ -63,9 +63,9 @@ li {
 }
 
 .button-small {
-    width: 120px;
+    max-width: 120px;
     height: 28px;
-    padding: 4px 0 3px;
+    padding: 4px 24px 3px;
     background-color: #111B47;
     border-radius: 2px;
     /* type setting */
@@ -143,7 +143,7 @@ li {
 }
 
 .nav li {
-    margin-right: 20px;
+    margin-right: 12px;
 }
 
 .nav li:last-child {
@@ -152,6 +152,10 @@ li {
 
 .nav li:hover {
     font-weight: bold;
+}
+
+.nav li:first-child {
+    display: none;
 }
 
 /* landing */
@@ -415,6 +419,19 @@ li {
     h2 {
         font-size: 24px;
         line-height: 1.33;
+    }
+
+    .button-small {
+        width: 120px;
+    }
+
+    /* nav */
+    .nav li {
+        margin-right: 20px;
+    }
+
+    .nav li:first-child {
+        display: block;
     }
 
     /* landing */
